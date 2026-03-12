@@ -4,7 +4,7 @@
 
 
 ## Tech Stack
-Game
+Godot 4.6.2
 
 ## Getting Started
 

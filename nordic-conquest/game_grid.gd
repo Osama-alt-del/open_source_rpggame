@@ -5,7 +5,7 @@ class_name GameGrid extends PanelContainer
 
 const TILE_PIXELS = 64
 
-var grid_items = Vector2i(10, 10)
+var grid_items = Array()
 
 @onready var grid = get_node("GridContainer")
 
@@ -16,10 +16,9 @@ func _ready() -> void:
 	initialise_grid()
 
 
+# Initialises grid background tiles
 func initialise_grid() -> void:
-	for row in grid_coords.x:
-		for col in grid_coords.y:
+	for col in grid_coords.x:
+		for row in grid_coords.y:
 			var box = grid_box.instantiate()
 			grid.add_child(box)
-			#box.global_position = Vector2(TILE_PIXELS * row, TILE_PIXELS * col)
-			#print(box.global_position)

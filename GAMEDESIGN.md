@@ -18,11 +18,24 @@ A single round consists of an exploration component, and an optional combat comp
 Once players have done everything in their turn they press 'ready'.
 Player turns take place based on who pressed 'next turn' first.
 
-
-
-
-
-
 ## Card Management
+Cards are obtained as a combat reward by defeating barbarians, or by exploring rare landmarks. Players can choose from 3 random cards.
+The main cards types are:
+### Combat cards
+- Deal x damage to enemies within 1 space
+- Next combat numbers appear for longer
+- Next combat incrase time for inputting numbers
+### Defence cards
+- Avoid next combat
+- Decrease attacking player's time for inputting numbers
+- Heal 5 HP
+### Exploration cards
+- Move 3 spaces instead of 1
+- Reveal the location of nearest landmark
+- Reveal enemy location
+### Recruitment cards
+- Gain 1 Viking
+### Raiding cards
+- Steal a card from a player
 # Combat
 ## Turn Order

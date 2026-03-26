@@ -1,5 +1,7 @@
 # Design Decisions and Architecture
 ## Description
+### Example
+Design: Player Character (Pirate) - Architecture: 2DPlayerBody
 
 ## Playable Area - Custom grid class
 ### Methods

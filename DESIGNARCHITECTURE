@@ -1,9 +1,30 @@
 # Design Decisions and Architecture
 ## Description
 
-## Playable Area
-## Player
-## Enemy
+## Playable Area - Custom grid class
+### Methods
+- initialise grid
+- get index from coords
+- uncover tile at coords
+
+## Tile - Custom tile class
+### Nodes
+- Sprite
+
+## Wonder - Custom tile class
+### Variables
+- PointValue
+
+## Player - Custom player class
+### Nodes
+- Camera
+- Sprite
+### Methods
+- Move
+
+## Enemy - Custom enemy class
+### Nodes
+- Sprite
 
 ## Cards
 Cards are obtained as a combat reward by defeating barbarians, or by exploring rare landmarks. Players can choose from 3 random cards.
@@ -19,6 +40,8 @@ Move 3 spaces instead of 1
 Gain 1 Viking
 **Raiding**
 Steal a card from a player
+### Nodes
+- Texture2D
 
 ## Interactions
 When a player enters a new tile, this triggers an interaction.

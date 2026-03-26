@@ -1,0 +1,62 @@
+# Design Decisions and Architecture
+## Description
+### Example
+Design: Player Character (Pirate) - Architecture: 2DPlayerBody
+
+## Playable Area - Custom grid class
+### Methods
+- initialise grid
+- get index from coords
+- uncover tile at coords
+
+## Tile - Custom tile class
+### Nodes
+- Sprite
+
+## Wonder - Custom tile class
+### Variables
+- PointValue
+
+## Player - Custom player class
+### Nodes
+- Camera
+- Sprite
+### Methods
+- Move
+
+## Enemy - Custom enemy class
+### Nodes
+- Sprite
+
+## Cards
+Cards are obtained as a combat reward by defeating barbarians, or by exploring rare landmarks. Players can choose from 3 random cards.
+
+Classes:
+**Combat**
+Deal x damage to enemies within 1 space
+**Defence**
+Avoid next combat
+**Exploration**
+Move 3 spaces instead of 1
+**Recruitment**
+Gain 1 Viking
+**Raiding**
+Steal a card from a player
+### Nodes
+- Texture2D
+
+## Interactions
+When a player enters a new tile, this triggers an interaction.
+Each player starts with 3 henchmen that can explore independantly. In a single player turn each henchman can either:
+
+- move: move one tile at a time
+- attack: attack another player in vicinity
+- use card: activate card
+
+exploration : each player uses their henchmen
+combat : can occur in 2 ways
+- if a player uses "attack" on a nearby henchmen
+- if 2 or more henchmen land on the same tile Once players have done everything in their turn they press 'ready'. Player turns take place based on who pressed 'next turn' first.
+
+## UI
+Text-based, grid style.

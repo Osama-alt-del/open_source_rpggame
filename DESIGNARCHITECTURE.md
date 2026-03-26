@@ -2,6 +2,17 @@
 ## Description
 ### Example
 Design: Player Character (Pirate) - Architecture: 2DPlayerBody
+## Object Structure:
+GridItem == Abstract class for all grid items
+    attributes:
+        "x" = x coordinate
+        "y" = y coordinate
+
+Enemy == Enemy Abstract Class
+    Inherits from GridItem
+        "health" = health points
+        "attack" = attack points
+
 
 ## Playable Area - Custom grid class
 ### Methods
